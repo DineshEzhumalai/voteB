@@ -11,10 +11,19 @@ header{
     align-items: center;
     background-color:transparent;
 }
+body
+{
+    background: rgb(14, 13, 13)  ;
+    width: 100%;
+
+    display: block;
+    position: relative;
+    background-position: cover;
+}
 .lines
 {
-    margin-top: 200px ;
- 
+    margin-top: 180px ;
+    
 }
 .logo{
     cursor: pointer;
@@ -48,11 +57,7 @@ header{
      background-color: palevioletred;
  }
  .wrap{
-     background: rgb(14, 13, 13)  ;
-     width: 100%;
-     height:100vh;
-     display: block;
-     position: relative;
+   
     z-index: 1;
  }
  .content{
@@ -63,9 +68,10 @@ header{
     color: whitesmoke;
  }
  .content img{
-     margin-top: 180px;
+     margin-top: 150px;
       width:40%;
       border-radius: 20px;
+      box-shadow: 0 0 9px #ccc;
       
  }
  .lines h1{
@@ -104,6 +110,12 @@ header{
     animation-duration: 5S;
     animation-iteration-count:infinite;
 }
+img:hover
+    {
+        transform: translate(10px);
+        
+    }
+
 @keyframes smart{
     0%{
         color:rgb(224, 20, 20); 
@@ -124,3 +136,24 @@ header{
         color:springgreen;
     }
 }
+@media screen and (max-width: 700px) {
+  
+    .content {
+       
+        display: grid;
+        
+    }
+    .content img 
+    {
+          width: 400px;
+          height: 400px;
+          
+    }
+    img:hover
+    {
+        transform: translateY(-10px);
+
+    }
+
+
+  }
